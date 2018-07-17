@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fatburners.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 13:25+0000\n"
+"POT-Creation-Date: 2018-07-17 13:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,7 @@ msgid "Change"
 msgstr ""
 
 #: ../qml/pages/SettingsPage.qml:182
-msgid "Activity in everyday life:\n"
+msgid "Activity in everyday life:"
 msgstr ""
 
 #: ../qml/pages/SettingsPage.qml:183 ../qml/pages/SettingsPage.qml:206
@@ -150,7 +150,7 @@ msgid "Very much activity"
 msgstr ""
 
 #: ../qml/pages/SettingsPage.qml:275
-msgid "Targeted daily calorie deficit:\n"
+msgid "Targeted daily calorie deficit:"
 msgstr ""
 
 #: ../qml/pages/SettingsPage.qml:275

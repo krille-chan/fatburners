@@ -179,7 +179,7 @@ Page {
                     text: ""
                     Component.onCompleted: update ()
                     function update () {
-                        text = i18n.tr("Activity in everyday life:\n") + " "
+                        text = i18n.tr("Activity in everyday life:") + "\n"
                         if ( settings.activity === activity.NONE ) text += i18n.tr("No activity")
                         else if ( settings.activity === activity.VERY_LITTLE ) text += i18n.tr("Very little activity")
                         else if ( settings.activity === activity.LITTLE ) text += i18n.tr("Little activity")
@@ -272,7 +272,7 @@ Page {
                 }
 
                 Label {
-                    text: i18n.tr("Targeted daily calorie deficit:\n") + Math.round(caloriesInput.value) + i18n.tr(" kilocalories")
+                    text: i18n.tr("Targeted daily calorie deficit:") + "\n" + Math.round(caloriesInput.value) + i18n.tr(" kilocalories")
                     font.bold: true
                 }
 

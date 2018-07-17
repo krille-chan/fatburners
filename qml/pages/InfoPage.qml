@@ -39,19 +39,19 @@ Page {
             SettingsListItem {
                 name: i18n.tr("Contributors")
                 icon: "contact-group"
-                onClicked: Qt.openUrlExternally("https://github.com/ChristianPauly/fluffychat/graphs/contributors")
+                onClicked: Qt.openUrlExternally("https://github.com/ChristianPauly/fatburners/graphs/contributors")
             }
 
             SettingsListItem {
                 name: i18n.tr("Source code")
                 icon: "text-xml-symbolic"
-                onClicked: Qt.openUrlExternally("https://github.com/ChristianPauly/fluffychat")
+                onClicked: Qt.openUrlExternally("https://github.com/ChristianPauly/fatburners")
             }
 
             SettingsListItem {
                 name: i18n.tr("License")
                 icon: "x-office-document-symbolic"
-                onClicked: Qt.openUrlExternally("https://github.com/ChristianPauly/fluffychat/blob/master/LICENSE")
+                onClicked: Qt.openUrlExternally("https://github.com/ChristianPauly/fatburners/blob/master/LICENSE")
             }
 
         }

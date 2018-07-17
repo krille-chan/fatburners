@@ -123,7 +123,7 @@ msgstr "Ändern"
 
 #: ../qml/pages/SettingsPage.qml:183
 msgid "Activity in everyday life:"
-msgstr "Aktivität im Alltag"
+msgstr "Aktivität im Alltag:"
 
 #: ../qml/pages/SettingsPage.qml:184 ../qml/pages/SettingsPage.qml:207
 msgid "No activity"
@@ -149,8 +149,8 @@ msgstr "Viel Aktivität"
 msgid "Very much activity"
 msgstr "Sehr viel Aktivität"
 
-#: ../qml/pages/SettingsPage.qml:277
-msgid "Targeted daily calorie deficit: "
+#: ../qml/pages/SettingsPage.qml:275
+msgid "Targeted daily calorie deficit:"
 msgstr "Angestrebtes tägliches Kaloriendefizit:"
 
 #: ../qml/pages/SettingsPage.qml:277
@@ -192,7 +192,7 @@ msgstr "Schwere Adipositas"
 
 #: ../qml/pages/SettingsPage.qml:334
 msgid "About Fatburners"
-msgstr "Über Fatburers"
+msgstr "Über Fatburners"
 
 #: ../qml/pages/AddSportsActivityPage.qml:67
 msgid "What did you practice?"
