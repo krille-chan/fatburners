@@ -20,7 +20,7 @@ Page {
         contentItem: Column {
             width: page.width
 
-            Image {
+            Icon {
                 id: coffeeImage
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.topMargin: parent.width / 4
@@ -32,7 +32,7 @@ Page {
             SettingsListItem {
                 name: i18n.tr("Donate me a coffee")
                 icon: "like"
-                //iconColor: UbuntuColors.red
+                iconColor: UbuntuColors.red
                 onClicked: Qt.openUrlExternally("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZAGCFNJ2SKZY8")
             }
 

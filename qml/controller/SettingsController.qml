@@ -24,4 +24,8 @@ Settings {
     // The number of calories, which the user wants to kill every day
     property var goal: 500
 
+    // Using the metric system instead of the old and confusing imperial system for the GUI?
+    // Dear Americans ... please think about it ...
+    property var metricSystem: true
+
 }

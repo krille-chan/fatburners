@@ -121,37 +121,37 @@ msgstr "Inter"
 msgid "Change"
 msgstr "Ändern"
 
-#: ../qml/pages/SettingsPage.qml:183
-msgid "Activity in everyday life:"
-msgstr "Aktivität im Alltag:"
+#: ../qml/pages/SettingsPage.qml:225
+msgid "Daily activity:"
+msgstr "Tägliche Aktivität:"
 
-#: ../qml/pages/SettingsPage.qml:184 ../qml/pages/SettingsPage.qml:207
-msgid "No activity"
-msgstr "Keine Aktivität"
+#: ../qml/pages/SettingsPage.qml:226
+msgid "No activity (*0.95)"
+msgstr "Keine Aktivität (*0.95)"
 
-#: ../qml/pages/SettingsPage.qml:185 ../qml/pages/SettingsPage.qml:217
-msgid "Very little activity"
-msgstr "Sehr wenig Aktivität"
+#: ../qml/pages/SettingsPage.qml:227
+msgid "Very little activity (*1.2)"
+msgstr "Sehr wenig Aktivität (*1.2)"
 
-#: ../qml/pages/SettingsPage.qml:186 ../qml/pages/SettingsPage.qml:227
-msgid "Little activity"
-msgstr "Wenig Aktivität"
+#: ../qml/pages/SettingsPage.qml:228
+msgid "Little activity (*1.5)"
+msgstr "Wenig Aktivität (*1.5)"
 
-#: ../qml/pages/SettingsPage.qml:187 ../qml/pages/SettingsPage.qml:237
-msgid "Medium activity"
-msgstr "Normale Aktivität"
+#: ../qml/pages/SettingsPage.qml:229
+msgid "Medium activity (*1.7)"
+msgstr "Normale Aktivität (*1.7)"
 
-#: ../qml/pages/SettingsPage.qml:188 ../qml/pages/SettingsPage.qml:247
-msgid "Much activity"
-msgstr "Viel Aktivität"
+#: ../qml/pages/SettingsPage.qml:230
+msgid "Much activity (*1.9)"
+msgstr "Viel Aktivität (*1.9)"
 
-#: ../qml/pages/SettingsPage.qml:189 ../qml/pages/SettingsPage.qml:257
-msgid "Very much activity"
-msgstr "Sehr viel Aktivität"
+#: ../qml/pages/SettingsPage.qml:231
+msgid "Very much activity (*2.2)"
+msgstr "Sehr viel Aktivität (*2.2)"
 
-#: ../qml/pages/SettingsPage.qml:275
-msgid "Targeted daily calorie deficit:"
-msgstr "Angestrebtes tägliches Kaloriendefizit:"
+#: ../qml/pages/SettingsPage.qml:129
+msgid "Diet target:"
+msgstr "Abnehmziel:"
 
 #: ../qml/pages/SettingsPage.qml:277
 msgid " kilocalories"
@@ -193,6 +193,10 @@ msgstr "Schwere Adipositas"
 #: ../qml/pages/SettingsPage.qml:334
 msgid "About Fatburners"
 msgstr "Über Fatburners"
+
+#: ../qml/pages/SettingsPage.qml:313
+msgid "Use metric system"
+msgstr "Benutze metrisches System"
 
 #: ../qml/pages/AddSportsActivityPage.qml:67
 msgid "What did you practice?"

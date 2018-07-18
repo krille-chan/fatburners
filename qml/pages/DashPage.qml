@@ -92,18 +92,18 @@ Page {
                     value: 1500
                 }
 
-                SettingsListItem {
+                SettingsListLink {
                     name: i18n.tr("Add meal")
                     icon: "gtk-add"
+                    page: "AddMealPage"
                     iconColor: UbuntuColors.blue
-                    onClicked: mainStack.push( Qt.resolvedUrl("./AddMealPage.qml") )
                 }
 
-                SettingsListItem {
+                SettingsListLink {
                     name: i18n.tr("Add sports activity")
                     icon: "unlike"
+                    page: "AddSportsActivityPage"
                     iconColor: UbuntuColors.red
-                    onClicked: mainStack.push( Qt.resolvedUrl("./AddSportsActivityPage.qml") )
                 }
 
                 Rectangle {

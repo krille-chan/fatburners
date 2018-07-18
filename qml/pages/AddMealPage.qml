@@ -96,7 +96,8 @@ Page {
                         height: units.gu(2)
                     }
 
-                    Slider {
+                    ButtonSlider {
+                        formatValueAlias: function ( v ) { return Math.round(v) }
                         id: caloriesInput
                         minimumValue: 1
                         maximumValue: 2000
@@ -128,7 +129,7 @@ Page {
                 Component.onCompleted: {
                     db.transaction(
                         function(tx) {
-                            var rs = tx.executeSql('SELECT * FROM Items WHERE Calories > 0 GROUP BY Description')
+                            var rs = tx.executeSql('SELECT * FROM Items WHERE Calories > 0 GROUP BY Description ORDER BY Timestamp DESC')
                             for ( var i = 0; i < rs.rows.length; i++ ) {
                                 var item = rs.rows[ i ]
                                 model.append({

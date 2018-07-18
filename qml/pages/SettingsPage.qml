@@ -7,6 +7,18 @@ Page {
     anchors.fill: parent
     id: page
 
+    function centimeterToImperial ( centimeter ) {
+        var inches = Math.round(centimeter / 2.54)
+        var feet = Math.floor(inches / 12)
+        return i18n.tr("%1ft %2in").arg(feet).arg(inches%12)
+    }
+
+    function kilogramToImperial ( kilogram ) {
+        var oz = Math.round(kilogram * 35.27396)
+        var lb = Math.floor(oz / 16)
+        return i18n.tr("%1lb %2oz").arg(lb).arg(oz%16)
+    }
+
     header: PageHeader {
         title: i18n.tr('Settings')
     }
@@ -32,7 +44,7 @@ Page {
 
                 Label {
                     height: units.gu(2)
-                    text: i18n.tr("Weight: ") + Math.round(weightInput.value) + i18n.tr("kg")
+                    text: i18n.tr("Weight: ") + ( settings.metricSystem ? i18n.tr("%1kg").arg(Math.round(weightInput.value)) : kilogramToImperial(weightInput.value) )
                     font.bold: true
                 }
 
@@ -41,15 +53,16 @@ Page {
                     height: units.gu(2)
                 }
 
-                Slider {
+                ButtonSlider {
                     width: parent.width
                     id: weightInput
                     minimumValue: 20
                     maximumValue: 300
                     live: false
                     stepSize: 1
-                    onValueChanged: settings.weight = Math.round(value)
-                    Component.onCompleted: weightInput.value = settings.weight
+                    formatValueAlias: function ( v ) { return settings.metricSystem ? i18n.tr("%1kg").arg(Math.round( v )) : kilogramToImperial( v ) }
+                    sliderElem.onValueChanged: settings.weight = Math.round(value)
+                    initValue: settings.weight
                 }
 
                 Rectangle {
@@ -59,7 +72,7 @@ Page {
 
                 Label {
                     height: units.gu(2)
-                    text: i18n.tr("Height: ") + (Math.round(heightInput.value)/100) + i18n.tr("m")
+                    text: i18n.tr("Height: ") + ( settings.metricSystem ? i18n.tr("%1m").arg(Math.round(heightInput.value )/100) : centimeterToImperial(Math.round(heightInput.value)))
                     font.bold: true
                 }
 
@@ -68,15 +81,16 @@ Page {
                     height: units.gu(2)
                 }
 
-                Slider {
+                ButtonSlider {
                     width: parent.width
                     id: heightInput
                     minimumValue: 80
                     maximumValue: 247
                     live: false
                     stepSize: 1
-                    onValueChanged: settings.size = Math.round(value)
-                    Component.onCompleted: value = settings.size
+                    formatValueAlias: function ( v ) { return settings.metricSystem ? i18n.tr("%1m").arg(Math.round( v )/100) : centimeterToImperial( v ) }
+                    sliderElem.onValueChanged: settings.size = Math.round(value)
+                    initValue: settings.size
                 }
 
                 Rectangle {
@@ -95,15 +109,42 @@ Page {
                     height: units.gu(2)
                 }
 
-                Slider {
+                ButtonSlider {
                     width: parent.width
                     id: ageInput
                     minimumValue: 0
                     maximumValue: 122
                     live: false
                     stepSize: 1
-                    onValueChanged: settings.age = Math.round(value)
-                    Component.onCompleted: value = settings.age
+                    sliderElem.onValueChanged: settings.age = Math.round(value)
+                    initValue: settings.age
+                }
+
+                Rectangle {
+                    width: parent.width
+                    height: units.gu(2)
+                }
+
+                Label {
+                    text: i18n.tr("Diet target:") + "\n " + (settings.metricSystem ? i18n.tr("%1 kg").arg(Math.round(caloriesInput.value / 10) / 100) : kilogramToImperial(Math.round(caloriesInput.value / 10) / 100)) + i18n.tr(" a week")
+                    font.bold: true
+                }
+
+                Rectangle {
+                    width: parent.width
+                    height: units.gu(2)
+                }
+
+                ButtonSlider {
+                    width: parent.width
+                    id: caloriesInput
+                    minimumValue: 0
+                    maximumValue: metabolism - 500
+                    live: false
+                    stepSize: 1
+                    formatValueAlias: function ( v ) { return i18n.tr("Save %1 kilocalories a day").arg(v)}
+                    sliderElem.onValueChanged: settings.goal = Math.round(value)
+                    initValue: settings.goal
                 }
 
                 Rectangle {
@@ -117,10 +158,11 @@ Page {
                     text: ""
                     Component.onCompleted: update ()
                     function update () {
+                        settings.sex = parseInt(settings.sex)
                         text = i18n.tr("Sex:") + " "
                         if ( settings.sex === gender.MALE ) text += i18n.tr("Male")
                         else if ( settings.sex === gender.FEMALE ) text += i18n.tr("Female")
-                        else text += i18n.tr("Inter")
+                        else text += i18n.tr("Intersexual")
                     }
                     font.bold: true
                 }
@@ -138,7 +180,7 @@ Page {
                     Column {
                         ListItem {
                             ListItemLayout {
-                                title.text: i18n.tr("Inter")
+                                title.text: i18n.tr("Intersexual")
                             }
                             onClicked: {
                                 settings.sex = gender.INTER
@@ -179,13 +221,14 @@ Page {
                     text: ""
                     Component.onCompleted: update ()
                     function update () {
-                        text = i18n.tr("Activity in everyday life:") + "\n"
-                        if ( settings.activity === activity.NONE ) text += i18n.tr("No activity")
-                        else if ( settings.activity === activity.VERY_LITTLE ) text += i18n.tr("Very little activity")
-                        else if ( settings.activity === activity.LITTLE ) text += i18n.tr("Little activity")
-                        else if ( settings.activity === activity.MEDIUM ) text += i18n.tr("Medium activity")
-                        else if ( settings.activity === activity.MUCH ) text += i18n.tr("Much activity")
-                        else if ( settings.activity === activity.VERY_MUCH ) text += i18n.tr("Very much activity")
+                        settings.activity = parseFloat(settings.activity)
+                        text = i18n.tr("Daily activity:") + "\n"
+                        if ( settings.activity === activity.NONE ) text += i18n.tr("No activity (*0.95)")
+                        else if ( settings.activity === activity.VERY_LITTLE ) text += i18n.tr("Very little activity (*1.2)")
+                        else if ( settings.activity === activity.LITTLE ) text += i18n.tr("Little activity (*1.5)")
+                        else if ( settings.activity === activity.MEDIUM ) text += i18n.tr("Medium activity (*1.7)")
+                        else if ( settings.activity === activity.MUCH ) text += i18n.tr("Much activity (*1.9)")
+                        else if ( settings.activity === activity.VERY_MUCH ) text += i18n.tr("Very much activity (*2.2)")
                     }
                     font.bold: true
                 }
@@ -264,34 +307,13 @@ Page {
 
                     }
                 }
+            }
 
-
-                Rectangle {
-                    width: parent.width
-                    height: units.gu(2)
-                }
-
-                Label {
-                    text: i18n.tr("Targeted daily calorie deficit:") + "\n" + Math.round(caloriesInput.value) + i18n.tr(" kilocalories")
-                    font.bold: true
-                }
-
-                Rectangle {
-                    width: parent.width
-                    height: units.gu(2)
-                }
-
-                Slider {
-                    width: parent.width
-                    id: caloriesInput
-                    minimumValue: 0
-                    maximumValue: metabolism - 500
-                    live: false
-                    stepSize: 1
-                    onValueChanged: settings.goal = Math.round(value)
-                    Component.onCompleted: value = settings.goal
-                }
-
+            SettingsListSwitch {
+                name: i18n.tr("Use metric system")
+                icon: "calculator-app-symbolic"
+                Component.onCompleted: isChecked = settings.metricSystem
+                onSwitching: function () { settings.metricSystem = isChecked }
             }
 
             SettingsListItem {
@@ -323,26 +345,10 @@ Page {
                 }
             }
 
-            ListItem {
-                height: layout.height
-                onClicked: mainStack.push( Qt.resolvedUrl("./InfoPage.qml") )
-
-                ListItemLayout {
-                    id: layout
-                    title.text: i18n.tr("About Fatburners")
-                    Icon {
-                        name: "info"
-                        width: units.gu(4)
-                        height: units.gu(4)
-                        SlotsLayout.position: SlotsLayout.Leading
-                    }
-                    Icon {
-                        name: "toolkit_chevron-ltr_4gu"
-                        width: units.gu(3)
-                        height: units.gu(3)
-                        SlotsLayout.position: SlotsLayout.Trailing
-                    }
-                }
+            SettingsListLink {
+                name: i18n.tr("About Fatburners")
+                icon: "info"
+                page: "InfoPage"
             }
 
         }
