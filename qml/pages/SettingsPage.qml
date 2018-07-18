@@ -116,6 +116,7 @@ Page {
                     maximumValue: 122
                     live: false
                     stepSize: 1
+                    formatValueAlias: function ( v ) { return Math.round(v) }
                     sliderElem.onValueChanged: settings.age = Math.round(value)
                     initValue: settings.age
                 }
@@ -142,7 +143,7 @@ Page {
                     maximumValue: metabolism - 500
                     live: false
                     stepSize: 1
-                    formatValueAlias: function ( v ) { return i18n.tr("Save %1 kilocalories a day").arg(v)}
+                    formatValueAlias: function ( v ) { return i18n.tr("Save %1 kilocalories a day").arg( Math.round(v) )}
                     sliderElem.onValueChanged: settings.goal = Math.round(value)
                     initValue: settings.goal
                 }
