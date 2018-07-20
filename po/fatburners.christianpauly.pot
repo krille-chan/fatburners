@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fatburners.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 13:56+0000\n"
+"POT-Creation-Date: 2018-07-20 07:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,52 +149,28 @@ msgstr ""
 msgid "Daily activity:"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:227
+#: ../qml/pages/SettingsPage.qml:227 ../qml/pages/SettingsPage.qml:250
 msgid "No activity (*0.95)"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:228
+#: ../qml/pages/SettingsPage.qml:228 ../qml/pages/SettingsPage.qml:260
 msgid "Very little activity (*1.2)"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:229
+#: ../qml/pages/SettingsPage.qml:229 ../qml/pages/SettingsPage.qml:270
 msgid "Little activity (*1.5)"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:230
+#: ../qml/pages/SettingsPage.qml:230 ../qml/pages/SettingsPage.qml:280
 msgid "Medium activity (*1.7)"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:231
+#: ../qml/pages/SettingsPage.qml:231 ../qml/pages/SettingsPage.qml:290
 msgid "Much activity (*1.9)"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:232
+#: ../qml/pages/SettingsPage.qml:232 ../qml/pages/SettingsPage.qml:300
 msgid "Very much activity (*2.2)"
-msgstr ""
-
-#: ../qml/pages/SettingsPage.qml:250
-msgid "No activity"
-msgstr ""
-
-#: ../qml/pages/SettingsPage.qml:260
-msgid "Very little activity"
-msgstr ""
-
-#: ../qml/pages/SettingsPage.qml:270
-msgid "Little activity"
-msgstr ""
-
-#: ../qml/pages/SettingsPage.qml:280
-msgid "Medium activity"
-msgstr ""
-
-#: ../qml/pages/SettingsPage.qml:290
-msgid "Much activity"
-msgstr ""
-
-#: ../qml/pages/SettingsPage.qml:300
-msgid "Very much activity"
 msgstr ""
 
 #: ../qml/pages/SettingsPage.qml:314
@@ -205,12 +181,12 @@ msgstr ""
 msgid "Calorie consumption:"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:321 ../qml/components/ItemListItem.qml:22
+#: ../qml/pages/SettingsPage.qml:321 ../qml/components/ItemListItem.qml:26
 #: ../qml/components/RecentListItem.qml:16
 msgid "kilocalories"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:326
+#: ../qml/pages/SettingsPage.qml:327 ../qml/pages/SettingsPage.qml:330
 msgid "Body mass index:"
 msgstr ""
 
@@ -234,7 +210,7 @@ msgstr ""
 msgid "Strong obesity"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:350
+#: ../qml/pages/SettingsPage.qml:352
 msgid "About Fatburners"
 msgstr ""
 
@@ -254,7 +230,7 @@ msgstr ""
 msgid "Recent activities:"
 msgstr ""
 
-#: ../qml/components/ItemListItem.qml:16
+#: ../qml/components/ItemListItem.qml:19
 msgid " - "
 msgstr ""
 

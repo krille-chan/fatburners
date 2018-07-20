@@ -247,7 +247,7 @@ Page {
                     Column {
                         ListItem {
                             ListItemLayout {
-                                title.text: i18n.tr("No activity")
+                                title.text: i18n.tr("No activity (*0.95)")
                             }
                             onClicked: {
                                 settings.activity = activity.NONE
@@ -257,7 +257,7 @@ Page {
                         }
                         ListItem {
                             ListItemLayout {
-                                title.text: i18n.tr("Very little activity")
+                                title.text: i18n.tr("Very little activity (*1.2)")
                             }
                             onClicked: {
                                 settings.activity = activity.VERY_LITTLE
@@ -267,7 +267,7 @@ Page {
                         }
                         ListItem {
                             ListItemLayout {
-                                title.text: i18n.tr("Little activity")
+                                title.text: i18n.tr("Little activity (*1.5)")
                             }
                             onClicked: {
                                 settings.activity = activity.LITTLE
@@ -277,7 +277,7 @@ Page {
                         }
                         ListItem {
                             ListItemLayout {
-                                title.text: i18n.tr("Medium activity")
+                                title.text: i18n.tr("Medium activity (*1.7)")
                             }
                             onClicked: {
                                 settings.activity = activity.MEDIUM
@@ -287,7 +287,7 @@ Page {
                         }
                         ListItem {
                             ListItemLayout {
-                                title.text: i18n.tr("Much activity")
+                                title.text: i18n.tr("Much activity (*1.9)")
                             }
                             onClicked: {
                                 settings.activity = activity.MUCH
@@ -297,7 +297,7 @@ Page {
                         }
                         ListItem {
                             ListItemLayout {
-                                title.text: i18n.tr("Very much activity")
+                                title.text: i18n.tr("Very much activity (*2.2)")
                             }
                             onClicked: {
                                 settings.activity = activity.VERY_MUCH
@@ -323,11 +323,11 @@ Page {
             }
 
             SettingsListItem {
-                name: i18n.tr("Body mass index:") + " <b>" + Math.round(settings.weight / (settings.size/100 * settings.size/100)) + "</b>"
+                property var bmi: Math.round(settings.weight / (settings.size/100 * settings.size/100))
+                name: i18n.tr("Body mass index:") + " <b>" + bmi + "</b>"
                 icon: "like"
-                Component.onCompleted: {
-                    name += " ("
-                    var bmi = settings.weight / (settings.size/100 * settings.size/100)
+                function update () {
+                    name = i18n.tr("Body mass index:") + " <b>" + bmi + "</b> ("
                     if ( settings.sex === gender.FEMALE || settings.sex === gender.MALE ) {
                         if ( bmi < 19) name += i18n.tr("Underweight")
                         else if ( bmi < 24) name += i18n.tr("Normal weight")
@@ -344,6 +344,8 @@ Page {
                     }
                     name += ")"
                 }
+                onBmiChanged: update ()
+                Component.onCompleted: update ()
             }
 
             SettingsListLink {

@@ -117,6 +117,10 @@ msgstr "Weiblich"
 msgid "Inter"
 msgstr "Inter"
 
+#: ../qml/pages/SettingsPage.qml:130
+msgid " a week"
+msgstr " pro Woche"
+
 #: ../qml/pages/SettingsPage.qml:135 ../qml/pages/SettingsPage.qml:201
 msgid "Change"
 msgstr "Ändern"

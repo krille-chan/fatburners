@@ -6,11 +6,14 @@ ListItem {
     height: layout.height
     id: itemListItem
 
+    property var isToday: false
+
     function getDateString () {
         var date = (new Date (timestamp)).toLocaleDateString(Qt.locale(), Locale.ShortFormat)
         var time = (new Date (timestamp)).toLocaleTimeString(Qt.locale(), Locale.ShortFormat)
         var today = (new Date()).toLocaleDateString(Qt.locale(), Locale.ShortFormat)
         if ( date == today ) {
+            isToday = true
             return time
         }
         else return date + i18n.tr(" - ") + time
@@ -18,6 +21,7 @@ ListItem {
 
     ListItemLayout {
         id: layout
+        opacity: isToday ? 1 : 0.33
         title.text: "<b>" + name + "</b>" + " (" + getDateString() + ")"
         subtitle.text: calories + " " + i18n.tr("kilocalories")
         Icon {
