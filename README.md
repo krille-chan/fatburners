@@ -7,11 +7,11 @@ Download from the Open Store: https://open-store.io/app/fatburners.christianpaul
 ### Screenshots
 
 <p>
-  <img src="/docs/screenshots/screenshot20180718_155041034.png" width="19%" />
-  <img src="/docs/screenshots/screenshot20180718_155123254.png" width="19%" />
-  <img src="/docs/screenshots/screenshot20180718_155140369.png" width="19%" />
-  <img src="/docs/screenshots/screenshot20180718_155147498.png" width="19%" />
-  <img src="/docs/screenshots/screenshot20180718_155329273.png" width="19%" />
+  <img src="/docs/screenshot20180718_155041034.png" width="19%" />
+  <img src="/docs/screenshot20180718_155123254.png" width="19%" />
+  <img src="/docs/screenshot20180718_155140369.png" width="19%" />
+  <img src="/docs/screenshot20180718_155147498.png" width="19%" />
+  <img src="/docs/screenshot20180718_155329273.png" width="19%" />
 </p>
 
 ### How to build
