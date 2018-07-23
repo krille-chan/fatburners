@@ -42,7 +42,7 @@ msgid "Calories account"
 msgstr "Recuento de calorías"
 
 #: ../qml/pages/DashPage.qml:84
-msgid "kilocalories left"
+msgid "%1 kilocalories left"
 msgstr "Quedan %1 kilocalorías"
 
 #: ../qml/pages/DashPage.qml:96 ../qml/pages/AddMealPage.qml:33
@@ -234,6 +234,11 @@ msgstr "Obesidad"
 msgid "Strong obesity"
 msgstr "Fuerte obesidad"
 
+
+#: ../qml/pages/SettingsPage.qml:352
+msgid "Info for Amputees"
+msgstr "Información para amputados"
+
 #: ../qml/pages/SettingsPage.qml:350
 msgid "About Fatburners"
 msgstr "Acerca de Fatburners"
@@ -260,4 +265,4 @@ msgstr " - "
 
 #: fatburners.desktop.in.h:1
 msgid "Fatburners"
-msgstr "Fatburners" 
+msgstr "Fatburners"
