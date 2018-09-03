@@ -42,8 +42,8 @@ msgid "Calories account"
 msgstr "Kalorienkonto"
 
 #: ../qml/pages/DashPage.qml:84
-msgid "kilocalories left"
-msgstr "Kilokalorien übrig"
+msgid "%1 kilocalories left"
+msgstr "%1 Kilokalorien übrig"
 
 #: ../qml/pages/DashPage.qml:96 ../qml/pages/AddMealPage.qml:33
 msgid "Add meal"

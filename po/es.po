@@ -42,7 +42,7 @@ msgid "Calories account"
 msgstr "Recuento de calorías"
 
 #: ../qml/pages/DashPage.qml:84
-msgid "kilocalories left"
+msgid "%1 kilocalories left"
 msgstr "Quedan %1 kilocalorías"
 
 #: ../qml/pages/DashPage.qml:96 ../qml/pages/AddMealPage.qml:33
@@ -260,4 +260,4 @@ msgstr " - "
 
 #: fatburners.desktop.in.h:1
 msgid "Fatburners"
-msgstr "Fatburners" 
+msgstr "Fatburners"
