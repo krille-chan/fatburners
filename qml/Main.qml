@@ -14,11 +14,7 @@ MainView {
     width: units.gu(45)
     height: units.gu(75)
 
-<<<<<<< HEAD
-    readonly property var version: "1.4"
-=======
-    readonly property var version: "1.3"
->>>>>>> 575ab751a4aa59aac71a0d71b05277e96b7862a0
+    readonly property var version: "1.5"
     readonly property var gender: { "INTER":1, "MALE":2, "FEMALE":3 }
     readonly property var activity: { "NONE":0.95, "VERY_LITTLE":1.2, "LITTLE":1.5, "MEDIUM":1.7, "MUCH":1.9, "VERY_MUCH":2.2 }
     property var metabolism: 1500

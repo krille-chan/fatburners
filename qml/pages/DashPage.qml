@@ -81,11 +81,8 @@ Page {
                         id: caloriesLabel
                         anchors.centerIn: parent
                         textSize: Label.XLarge
-<<<<<<< HEAD
                         text: i18n.tr("%1 kilocalories left").arg(Math.round(progressBar.value))
-=======
-                        text: i18n.tr("%1 kilocalories left").arg( Math.round(progressBar.value) )
->>>>>>> 575ab751a4aa59aac71a0d71b05277e96b7862a0
+
                     }
                 }
 

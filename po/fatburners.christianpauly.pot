@@ -8,11 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fatburners.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2018-09-03 07:57+0000\n"
-=======
-"POT-Creation-Date: 2018-07-23 11:37+0000\n"
->>>>>>> 575ab751a4aa59aac71a0d71b05277e96b7862a0
+"POT-Creation-Date: 2018-10-16 10:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-<<<<<<< HEAD
 #: ../qml/pages/InfoPage.qml:11
 msgid "Info about Fatburners %1"
 msgstr ""
@@ -50,15 +45,15 @@ msgstr ""
 msgid "%1 kilocalories left"
 msgstr ""
 
-#: ../qml/pages/DashPage.qml:96 ../qml/pages/AddMealPage.qml:33
+#: ../qml/pages/DashPage.qml:97 ../qml/pages/AddMealPage.qml:33
 msgid "Add meal"
 msgstr ""
 
-#: ../qml/pages/DashPage.qml:103 ../qml/pages/AddSportsActivityPage.qml:33
+#: ../qml/pages/DashPage.qml:104 ../qml/pages/AddSportsActivityPage.qml:33
 msgid "Add sports activity"
 msgstr ""
 
-#: ../qml/pages/DashPage.qml:119
+#: ../qml/pages/DashPage.qml:120
 msgid "History:"
 msgstr ""
 
@@ -76,15 +71,10 @@ msgstr ""
 
 #: ../qml/pages/AddMealPage.qml:90
 msgid "Calories: "
-=======
-#: ../qml/components/ItemListItem.qml:19
-msgid " - "
->>>>>>> 575ab751a4aa59aac71a0d71b05277e96b7862a0
 msgstr ""
 
-#: ../qml/components/ItemListItem.qml:26
-#: ../qml/components/RecentListItem.qml:16 ../qml/pages/SettingsPage.qml:321
-msgid "kilocalories"
+#: ../qml/pages/AddMealPage.qml:116
+msgid "Recent meals:"
 msgstr ""
 
 #: ../qml/pages/SettingsPage.qml:13
@@ -191,6 +181,11 @@ msgstr ""
 msgid "Calorie consumption:"
 msgstr ""
 
+#: ../qml/pages/SettingsPage.qml:321 ../qml/components/ItemListItem.qml:26
+#: ../qml/components/RecentListItem.qml:16
+msgid "kilocalories"
+msgstr ""
+
 #: ../qml/pages/SettingsPage.qml:327 ../qml/pages/SettingsPage.qml:330
 msgid "Body mass index:"
 msgstr ""
@@ -223,66 +218,6 @@ msgstr ""
 msgid "About Fatburners"
 msgstr ""
 
-#: ../qml/pages/AddMealPage.qml:33 ../qml/pages/DashPage.qml:96
-msgid "Add meal"
-msgstr ""
-
-#: ../qml/pages/AddMealPage.qml:67
-msgid "What did you eat?"
-msgstr ""
-
-#: ../qml/pages/AddMealPage.qml:79
-msgid "Meal description"
-msgstr ""
-
-#: ../qml/pages/AddMealPage.qml:90
-msgid "Calories: "
-msgstr ""
-
-#: ../qml/pages/AddMealPage.qml:116
-msgid "Recent meals:"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:51
-msgid "Calories account"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:84
-msgid "%1 kilocalories left"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:103 ../qml/pages/AddSportsActivityPage.qml:33
-msgid "Add sports activity"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:119
-msgid "History:"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:11
-msgid "Info about Fatburners %1"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:33
-msgid "Donate me a coffee"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:40
-msgid "Contributors"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:46
-msgid "Source code"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:52
-msgid "License"
-msgstr ""
-
-#: ../qml/pages/BlankPage.qml:11
-msgid "Welcome"
-msgstr ""
-
 #: ../qml/pages/AddSportsActivityPage.qml:67
 msgid "What did you practice?"
 msgstr ""
@@ -297,6 +232,10 @@ msgstr ""
 
 #: ../qml/pages/AddSportsActivityPage.qml:116
 msgid "Recent activities:"
+msgstr ""
+
+#: ../qml/components/ItemListItem.qml:19
+msgid " - "
 msgstr ""
 
 #: fatburners.desktop.in.h:1
