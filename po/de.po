@@ -113,8 +113,8 @@ msgstr "Männlich"
 msgid "Female"
 msgstr "Weiblich"
 
-#: ../qml/pages/SettingsPage.qml:123 ../qml/pages/SettingsPage.qml:141
-msgid "Inter"
+#: ../qml/pages/SettingsPage.qml:166 ../qml/pages/SettingsPage.qml:184
+msgid "Intersexual"
 msgstr "Inter"
 
 #: ../qml/pages/SettingsPage.qml:130
@@ -221,6 +221,10 @@ msgstr "Vergangene Aktivitäten:"
 #: ../qml/components/ItemListItem.qml:16
 msgid " - "
 msgstr " - "
+
+#: ../qml/pages/SettingsPage.qml:352
+msgid "Info for Amputees"
+msgstr "Infos für Amputierte"
 
 #: fatburners.desktop.in.h:1
 msgid "Fatburners"

@@ -234,6 +234,11 @@ msgstr "Obesidad"
 msgid "Strong obesity"
 msgstr "Fuerte obesidad"
 
+
+#: ../qml/pages/SettingsPage.qml:352
+msgid "Info for Amputees"
+msgstr "Información para amputados"
+
 #: ../qml/pages/SettingsPage.qml:350
 msgid "About Fatburners"
 msgstr "Acerca de Fatburners"

@@ -1,304 +1,244 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the fatburners.christianpauly package.
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: fatburners.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2018-09-03 07:57+0000\n"
-=======
 "POT-Creation-Date: 2018-07-23 11:37+0000\n"
->>>>>>> 575ab751a4aa59aac71a0d71b05277e96b7862a0
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-09-10 12:01+0200\n"
+"Language-Team: Dutch <vistausss@outlook.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl_NL\n"
 
-<<<<<<< HEAD
-#: ../qml/pages/InfoPage.qml:11
-msgid "Info about Fatburners %1"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:33
-msgid "Donate me a coffee"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:40
-msgid "Contributors"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:46
-msgid "Source code"
-msgstr ""
-
-#: ../qml/pages/InfoPage.qml:52
-msgid "License"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:51
-msgid "Calories account"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:84
-msgid "%1 kilocalories left"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:96 ../qml/pages/AddMealPage.qml:33
-msgid "Add meal"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:103 ../qml/pages/AddSportsActivityPage.qml:33
-msgid "Add sports activity"
-msgstr ""
-
-#: ../qml/pages/DashPage.qml:119
-msgid "History:"
-msgstr ""
-
-#: ../qml/pages/BlankPage.qml:11
-msgid "Welcome"
-msgstr ""
-
-#: ../qml/pages/AddMealPage.qml:67
-msgid "What did you eat?"
-msgstr ""
-
-#: ../qml/pages/AddMealPage.qml:79
-msgid "Meal description"
-msgstr ""
-
-#: ../qml/pages/AddMealPage.qml:90
-msgid "Calories: "
-=======
 #: ../qml/components/ItemListItem.qml:19
 msgid " - "
->>>>>>> 575ab751a4aa59aac71a0d71b05277e96b7862a0
-msgstr ""
+msgstr " - "
 
 #: ../qml/components/ItemListItem.qml:26
 #: ../qml/components/RecentListItem.qml:16 ../qml/pages/SettingsPage.qml:321
 msgid "kilocalories"
-msgstr ""
+msgstr "kilocalorieën"
 
 #: ../qml/pages/SettingsPage.qml:13
 msgid "%1ft %2in"
-msgstr ""
+msgstr "%1m %2cm"
 
 #: ../qml/pages/SettingsPage.qml:19
 msgid "%1lb %2oz"
-msgstr ""
+msgstr "%1kg %2gr"
 
 #: ../qml/pages/SettingsPage.qml:23
 msgid "Settings"
-msgstr ""
+msgstr "Instellingen"
 
 #: ../qml/pages/SettingsPage.qml:47
 msgid "Weight: "
-msgstr ""
+msgstr "Gewicht: "
 
 #: ../qml/pages/SettingsPage.qml:47 ../qml/pages/SettingsPage.qml:63
 msgid "%1kg"
-msgstr ""
+msgstr "%1kg"
 
 #: ../qml/pages/SettingsPage.qml:75
 msgid "Height: "
-msgstr ""
+msgstr "Lengte: "
 
 #: ../qml/pages/SettingsPage.qml:75 ../qml/pages/SettingsPage.qml:91
 msgid "%1m"
-msgstr ""
+msgstr "%1m"
 
 #: ../qml/pages/SettingsPage.qml:103
 msgid "Age: "
-msgstr ""
+msgstr "Leeftijd: "
 
 #: ../qml/pages/SettingsPage.qml:130
 msgid "Diet target:"
-msgstr ""
+msgstr "Dieetdoel:"
 
 #: ../qml/pages/SettingsPage.qml:130
 msgid "%1 kg"
-msgstr ""
+msgstr "%1 kg"
 
 #: ../qml/pages/SettingsPage.qml:130
 msgid " a week"
-msgstr ""
+msgstr " één week"
 
 #: ../qml/pages/SettingsPage.qml:146
 msgid "Save %1 kilocalories a day"
-msgstr ""
+msgstr "Verbrand %1 kilocalorieën per dag"
 
 #: ../qml/pages/SettingsPage.qml:163
 msgid "Sex:"
-msgstr ""
+msgstr "Geslacht:"
 
 #: ../qml/pages/SettingsPage.qml:164 ../qml/pages/SettingsPage.qml:194
 msgid "Male"
-msgstr ""
+msgstr "Man"
 
 #: ../qml/pages/SettingsPage.qml:165 ../qml/pages/SettingsPage.qml:204
 msgid "Female"
-msgstr ""
+msgstr "Vrouw"
 
 #: ../qml/pages/SettingsPage.qml:166 ../qml/pages/SettingsPage.qml:184
 msgid "Intersexual"
-msgstr ""
+msgstr "Interseksueel"
 
 #: ../qml/pages/SettingsPage.qml:178 ../qml/pages/SettingsPage.qml:244
 msgid "Change"
-msgstr ""
+msgstr "Wijzigen"
 
 #: ../qml/pages/SettingsPage.qml:226
 msgid "Daily activity:"
-msgstr ""
+msgstr "Dagelijkse inspanning:"
 
 #: ../qml/pages/SettingsPage.qml:227 ../qml/pages/SettingsPage.qml:250
 msgid "No activity (*0.95)"
-msgstr ""
+msgstr "Geen inspanning (+0.95)"
 
 #: ../qml/pages/SettingsPage.qml:228 ../qml/pages/SettingsPage.qml:260
 msgid "Very little activity (*1.2)"
-msgstr ""
+msgstr "Erg weinig inspanning (+1.2)"
 
 #: ../qml/pages/SettingsPage.qml:229 ../qml/pages/SettingsPage.qml:270
 msgid "Little activity (*1.5)"
-msgstr ""
+msgstr "Weinig inspanning (+1.5)"
 
 #: ../qml/pages/SettingsPage.qml:230 ../qml/pages/SettingsPage.qml:280
 msgid "Medium activity (*1.7)"
-msgstr ""
+msgstr "Gemiddelde inspanning (+1.7)"
 
 #: ../qml/pages/SettingsPage.qml:231 ../qml/pages/SettingsPage.qml:290
 msgid "Much activity (*1.9)"
-msgstr ""
+msgstr "Veel inspanning (+1.9)"
 
 #: ../qml/pages/SettingsPage.qml:232 ../qml/pages/SettingsPage.qml:300
 msgid "Very much activity (*2.2)"
-msgstr ""
+msgstr "Erg veel inspanning (+2.2)"
 
 #: ../qml/pages/SettingsPage.qml:314
 msgid "Use metric system"
-msgstr ""
+msgstr "Metrisch systeem gebruiken"
 
 #: ../qml/pages/SettingsPage.qml:321
 msgid "Calorie consumption:"
-msgstr ""
+msgstr "Calorie-inname:"
 
 #: ../qml/pages/SettingsPage.qml:327 ../qml/pages/SettingsPage.qml:330
 msgid "Body mass index:"
-msgstr ""
+msgstr "BMI:"
 
 #: ../qml/pages/SettingsPage.qml:332 ../qml/pages/SettingsPage.qml:339
 msgid "Underweight"
-msgstr ""
+msgstr "Ondergewicht"
 
 #: ../qml/pages/SettingsPage.qml:333 ../qml/pages/SettingsPage.qml:340
 msgid "Normal weight"
-msgstr ""
+msgstr "Normaal gewicht"
 
 #: ../qml/pages/SettingsPage.qml:334 ../qml/pages/SettingsPage.qml:341
 msgid "Overweight"
-msgstr ""
+msgstr "Overgewicht"
 
 #: ../qml/pages/SettingsPage.qml:335 ../qml/pages/SettingsPage.qml:342
 msgid "Obesity"
-msgstr ""
+msgstr "Obesitas"
 
 #: ../qml/pages/SettingsPage.qml:336 ../qml/pages/SettingsPage.qml:343
 msgid "Strong obesity"
-msgstr ""
+msgstr "Zware obesitas"
 
 #: ../qml/pages/SettingsPage.qml:352
 msgid "Info for Amputees"
-msgstr ""
+msgstr "Informatie voor geamputeerden"
 
 #: ../qml/pages/SettingsPage.qml:358
 msgid "About Fatburners"
-msgstr ""
+msgstr "Over Fatburners"
 
 #: ../qml/pages/AddMealPage.qml:33 ../qml/pages/DashPage.qml:96
 msgid "Add meal"
-msgstr ""
+msgstr "Maaltijd toevoegen"
 
 #: ../qml/pages/AddMealPage.qml:67
 msgid "What did you eat?"
-msgstr ""
+msgstr "Wat heb je gegeten?"
 
 #: ../qml/pages/AddMealPage.qml:79
 msgid "Meal description"
-msgstr ""
+msgstr "Maaltijdomschrijving"
 
 #: ../qml/pages/AddMealPage.qml:90
 msgid "Calories: "
-msgstr ""
+msgstr "Calorieën: "
 
 #: ../qml/pages/AddMealPage.qml:116
 msgid "Recent meals:"
-msgstr ""
+msgstr "Recente maaltijden:"
 
 #: ../qml/pages/DashPage.qml:51
 msgid "Calories account"
-msgstr ""
+msgstr "Aantal calorieën"
 
 #: ../qml/pages/DashPage.qml:84
 msgid "%1 kilocalories left"
-msgstr ""
+msgstr "%1 kilocalorieën resterend"
 
 #: ../qml/pages/DashPage.qml:103 ../qml/pages/AddSportsActivityPage.qml:33
 msgid "Add sports activity"
-msgstr ""
+msgstr "Sportactiviteit toevoegen"
 
 #: ../qml/pages/DashPage.qml:119
 msgid "History:"
-msgstr ""
+msgstr "Geschiedenis:"
 
 #: ../qml/pages/InfoPage.qml:11
 msgid "Info about Fatburners %1"
-msgstr ""
+msgstr "Informatie over Fatburners %1"
 
 #: ../qml/pages/InfoPage.qml:33
 msgid "Donate me a coffee"
-msgstr ""
+msgstr "Doneren"
 
 #: ../qml/pages/InfoPage.qml:40
 msgid "Contributors"
-msgstr ""
+msgstr "Bijdragers"
 
 #: ../qml/pages/InfoPage.qml:46
 msgid "Source code"
-msgstr ""
+msgstr "Broncode"
 
 #: ../qml/pages/InfoPage.qml:52
 msgid "License"
-msgstr ""
+msgstr "Licentie"
 
 #: ../qml/pages/BlankPage.qml:11
 msgid "Welcome"
-msgstr ""
+msgstr "Welkom"
 
 #: ../qml/pages/AddSportsActivityPage.qml:67
 msgid "What did you practice?"
-msgstr ""
+msgstr "Welke sport heb je beoefend?"
 
 #: ../qml/pages/AddSportsActivityPage.qml:79
 msgid "Sports activity"
-msgstr ""
+msgstr "Sportactiviteit"
 
 #: ../qml/pages/AddSportsActivityPage.qml:90
 msgid "Spent calories: "
-msgstr ""
+msgstr "Verbande calorieën: "
 
 #: ../qml/pages/AddSportsActivityPage.qml:116
 msgid "Recent activities:"
-msgstr ""
+msgstr "Recente activiteiten:"
 
 #: fatburners.desktop.in.h:1
 msgid "Fatburners"
-msgstr ""
+msgstr "Fatburners"

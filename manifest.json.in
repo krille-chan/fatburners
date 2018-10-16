@@ -9,7 +9,11 @@
             "desktop":  "fatburners.desktop"
         }
     },
+<<<<<<< HEAD
     "version": "1.4",
+=======
+    "version": "1.3",
+>>>>>>> 575ab751a4aa59aac71a0d71b05277e96b7862a0
     "maintainer": "Christian Pauly <christian-pauly@posteo.de>",
     "framework" : "ubuntu-sdk-16.04"
 }

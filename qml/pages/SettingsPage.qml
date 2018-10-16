@@ -348,6 +348,12 @@ Page {
                 Component.onCompleted: update ()
             }
 
+            SettingsListItem {
+                name: i18n.tr("Info for Amputees")
+                icon: "text-xml-symbolic"
+                onClicked: Qt.openUrlExternally("https://www.livestrong.com/article/197827-how-to-calculate-bmi-for-amputee/")
+            }
+
             SettingsListLink {
                 name: i18n.tr("About Fatburners")
                 icon: "info"
